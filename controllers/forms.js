@@ -4,7 +4,6 @@ const getFilteredResponses = async (req, res) => {
     const { formId } = req.params;
     const { filters, limit = 150, offset = 0, ...params } = req.query;
     try {
-        // Replace with actual Fetch logic from Fillout API
         const responses = await fetchFilteredResponses(formId, params, filters, limit, offset);
         res.json(responses);
     } catch (error) {
