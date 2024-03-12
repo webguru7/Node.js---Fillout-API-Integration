@@ -4,6 +4,9 @@
 
 This Node.js project demonstrates a simple REST API server setup to interact with the Fillout.com API. It fetches form responses and allows filtering based on specified criteria. Built with Express.js, it serves as an extension to the existing Fillout API capabilities by adding a custom filtering option for form responses.
 
+## Live Server Example
+[https://node-js-fillout-api-integration.onrender.com/cLZojxk94ous/filteredResponses?filters=[{"id":"dSRAe3hygqVwTpPK69p5td","condition":"greater_than","value":"2024-03-01"}]&limit=2](https://node-js-fillout-api-integration.onrender.com/cLZojxk94ous/filteredResponses?filters=[{"id":"dSRAe3hygqVwTpPK69p5td","condition":"greater_than","value":"2024-03-01"}]&limit=2)
+
 ## Features
 
 - Fetch responses for a specific form from Fillout.com.
@@ -14,7 +17,7 @@ This Node.js project demonstrates a simple REST API server setup to interact wit
 
 ### Prerequisites
 
-- Node.js (version 12 or newer recommended)
+- Node.js (version 20 or newer recommended)
 - npm (comes with Node.js)
 
 ### Installation
@@ -38,4 +41,5 @@ To fetch and filter form responses, make a GET request to /{formId}/filteredResp
 
 ### Example Request
    ```sh 
-   http://localhost:3000/cLZojxk94ous/filteredResponses?filters=[{"id":"questionId","condition":"equals","value":"Answer"}]
+   http://localhost:3000/cLZojxk94ous/filteredResponses?filters= [{"id":"questionId","condition":"equals","value":"Answer"}]
+   ```
